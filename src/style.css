@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: auto;
+    height: 100vh;
+    background: #06beb6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*----------------------------------------------------Navigation Bar-----------------------------------------------------------*/
+
+#navigation-bar {
+    width: 1415.25px;
+    height: 64px;
+    margin: auto;
+    padding: 4px 12px 4px 12px;
+    border-radius: 800px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.nav-button {
+    padding: 0px 15px;
+    background-color: none;
+    border: none;
+    color: #1d2653;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: color 0.4s;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: none;
+    color: #497be8;
+}
+
+.nav-button.active {
+    background-color: none;
+    color: #497be8;
+}
+
+.nav2 {
+    margin: 0 6px;
+}
+
+/*----------------------------------------------------My Information-------------------------------------------------------------*/
