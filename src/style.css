@@ -6,19 +6,15 @@
     box-sizing: border-box;
 }
 
+/*----------------------------------------------------Navigation Bar-----------------------------------------------------------*/
+
 header {
     width: auto;
-    height: 100vh;
+    height: 10vh;
     background: #06beb6;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #48b1bf, #06beb6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
-
-/*----------------------------------------------------Navigation Bar-----------------------------------------------------------*/
 
 #navigation-bar {
     width: 1415.25px;
@@ -57,3 +53,56 @@ header {
 }
 
 /*----------------------------------------------------My Information-------------------------------------------------------------*/
+
+#left-col {
+    width: auto;
+    height: 50vh;
+    padding-right: 25%;
+    padding-top: 10%;
+}
+
+#right-col {
+    width: auto;
+    height: 50vh;
+    margin-top: 20%;
+    padding-left: 25%;
+    padding-top: 10%;
+    font-family: "Montserrat", sans-serif;
+}
+
+#right-col > h1 {
+    color: #fff;
+}
+
+#article1 {
+    width: auto;
+    height: 90vh;
+    background: #06beb6;
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
+    background: linear-gradient(to right, #48b1bf, #06beb6);
+}
+
+#article2 {
+    width: auto;
+    height: 100vh;
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+}
+
+#article3 {
+    width: auto;
+    height: 100vh;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+
+}
+
+main {
+    width: auto;
+    height: 100vh;
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+}
