@@ -17,11 +17,12 @@ header {
 }
 
 #navigation-bar {
-    width: 1415.25px;
+    width: 100%;
+    max-width: 1415.25px;
     height: 64px;
     margin: auto;
     padding: 4px 12px 4px 12px;
-    border-radius: 800px;
+    border-radius: 50px;
     background-color: rgb(255, 255, 255, 0.5);
 }
 
@@ -57,26 +58,138 @@ header {
 #left-col {
     width: auto;
     height: 50vh;
-    padding-right: 25%;
-    padding-top: 10%;
+    padding-right: 20%;
+    padding-top: 3%;
+    margin: 5rem;
 }
 
 #right-col {
     width: auto;
     height: 50vh;
-    margin-top: 20%;
+    margin-top: 15%;
     padding-left: 25%;
     padding-top: 10%;
     font-family: "Montserrat", sans-serif;
 }
 
-#right-col > h1 {
+#right-col>h1 {
     color: #fff;
+}
+
+/*Cv Button*/
+
+.btn-4 {
+    scale: 0.5;
+    --width: 234px;
+    --height: 83.2px;
+    --tooltip-height: 52px;
+    --tooltip-width: 143px;
+    --gap-between-tooltip-to-button: 23.4px;
+    --button-color: #000046;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: absolute;
+    text-align: center;
+    margin-left: 5.5%;
+    font-family: inherit;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.btn-4::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 22px;
+    color: #111;
+    border-radius: 6px;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.btn-4::after,
+.btn-4::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.btn-4 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-4 .button-wrapper,
+.btn-4 .text,
+.btn-4 .icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+}
+
+.btn-4 .text {
+    top: 0;
+}
+
+.btn-4 .text,
+.btn-4 .icon {
+    transition: top 0.5s;
+}
+
+.btn-4 .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-4 .icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-4:hover {
+    background: #8f44fd;
+}
+
+.btn-4:hover .text {
+    top: -100%;
+}
+
+.btn-4:hover .icon {
+    top: 0;
+}
+
+.btn-4:hover:before,
+.btn-4:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-4:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.btn-4:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
 
 #article1 {
     width: auto;
-    height: 90vh;
+    height: 120vh;
     background: #06beb6;
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
     background: linear-gradient(to right, #48b1bf, #06beb6);
@@ -84,7 +197,7 @@ header {
 
 #article2 {
     width: auto;
-    height: 100vh;
+    height: 120vh;
     background: #000046;
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
     background: linear-gradient(to right, #1CB5E0, #000046);
@@ -92,7 +205,7 @@ header {
 
 #article3 {
     width: auto;
-    height: 100vh;
+    height: 120vh;
     background: #F2994A;
     background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
     background: linear-gradient(to right, #F2C94C, #F2994A);

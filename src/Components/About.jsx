@@ -1,8 +1,10 @@
 import ProfilePicture from '../Images/Profile.jpg'
-import { gsap } from 'gsap/gsap-core'
+import { useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import CvButton from './CvButton';
 
 function About() {
-    
+
     return (
         <>
             <div className="container">
@@ -14,6 +16,8 @@ function About() {
                         <h1 className='fs-8 text-center mb-3'>Alperen ATASEVEN</h1>
                         <hr />
                         <h1 className='fs-4 text-center'>Yönetim Bilişim Sistemleri Öğrencisi</h1>
+                        <br />
+                        <CvButton />
                     </div>
                 </div>
             </div>
