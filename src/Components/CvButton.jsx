@@ -2,7 +2,7 @@ export default function CvButton() {
     return (
             <div className="btn-4" data-tooltip="Size: 20Mb">
                 <div className="button-wrapper">
-                    <div className="text">Cv İndir</div>
+                    <div className="text fw-bold">Cv İndir</div>
                     <span className="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
