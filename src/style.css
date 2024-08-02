@@ -28,7 +28,7 @@ progress::-webkit-progress-value {
 }
 
 hr {
-    border: none;
+    border: 8px solid #fff;
     height: 2px;
     background-color: #fff;
 }
@@ -88,7 +88,6 @@ header {
 /*----------------------------------------------------My Information-------------------------------------------------------------*/
 
 #left-col {
-    width: auto;
     height: 50vh;
     padding-right: 20%;
     padding-top: 3%;
@@ -265,4 +264,15 @@ main {
     background: #000046;
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
     background: linear-gradient(to right, #1CB5E0, #000046);
+}
+
+/*-------------------------------------------About-------------------------------------------------*/
+
+.about-text {
+    font-family: "Montserrat", sans-serif;
+}
+
+#about-picture {
+    width: 40%;
+    margin: auto;
 }

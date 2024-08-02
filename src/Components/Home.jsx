@@ -1,21 +1,20 @@
-import ProfilePicture from '../Images/Profile.jpg'
+import HomePicture from '../Images/Development.png'
 import CvButton from './CvButton';
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 function Home() {
     
-
     return (
         <>
             <div className="container">
                 <div className="row">
-                    <div className="profileimg col text-center" id="left-col">
-                        <img src={ProfilePicture} class="img-thumbnail" alt="ProfilePicture" />
+                    <div className="col-5 text-center mb-5" id='left-col'>
+                        <img src={HomePicture} class="img" alt="ProfilePicture" style={{width:'50vh'}} />
                     </div>
-                    <div className="col text-center p-5" id="right-col">
+                    <div className="col-7 text-center p-5" id='right-col'>
                         <h1 className='fs-8 text-center mb-3'>Alperen ATASEVEN</h1>
-                        <hr />
+                        <hr style={{border:'1px solid #fff', borderRadius:'10px'}} />
                         <h1 className='fs-4 text-center'>Yönetim Bilişim Sistemleri Öğrencisi</h1>
                         <br />
                         <CvButton />
