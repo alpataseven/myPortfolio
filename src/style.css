@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+#scrolltop {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
 progress {
     position: fixed;
     z-index: 2;
@@ -39,13 +49,8 @@ header {
     width: auto;
     height: 10vh;
     background: #4776E6;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8E54E9, #4776E6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 }
 
 #navigation-bar {
@@ -275,4 +280,19 @@ main {
 #about-picture {
     width: 40%;
     margin: auto;
+}
+
+/*---------------------------------------Talents--------------------------------------------------*/
+
+.talent-box {
+    width: auto;
+    height: 65%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.5);
+    font-family: "Montserrat", sans-serif;
+    color: #1d2653;
+}
+
+.talent-text {
+    font-family: "Montserrat", sans-serif;
 }

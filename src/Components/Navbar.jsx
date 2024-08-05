@@ -4,10 +4,8 @@ function Navbar() {
 
     const NavbarLink = [
         { id: 1, link: "#aboutLink", name: "Hakkımda" },
-        { id: 2, link: "#resumeLink", name: "Özgeçmiş" },
         { id: 3, link: "#talentLink", name: "Yetenekler" },
         { id: 4, link: "#projectLink", name: "Projeler" },
-        { id: 5, link: "#timonialsLinktes", name: "Referanslar" },
         { id: 6, link: "#contactLink", name: "İletişim" }
     ]
 
