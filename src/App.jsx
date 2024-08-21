@@ -20,10 +20,11 @@ function App() {
         <article id='article1'><Home /></article>
         <article id='article2'><About /></article>
         <article id='article3'><Talents /></article>
-        <article id='article3'><Projects /></article>
-        <article id='article3'><Contact /></article>
+        <article id='article4'><Projects /></article>
+        <article id='article5'><Contact /></article>
+        <Footer />
       </main>
-      <Footer />
+      
     </>
   )
 }
